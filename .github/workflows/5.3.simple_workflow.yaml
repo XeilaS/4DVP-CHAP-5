@@ -4,7 +4,6 @@ on:
 jobs:
   testing_phase:
     runs-on: ubuntu-latest
-    if: always()
     steps:
       - name: Checkout another repository
         uses: actions/checkout@v3
@@ -15,6 +14,7 @@ jobs:
       - run: pip install pytest
       - run: pip install pytest-html
       - run: python -m pytest --html=report.html --self-contained-html
+        if: always()
       - name: Save test report
         uses: actions/upload-artifact@v3
         with:
