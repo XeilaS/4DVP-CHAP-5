@@ -5,8 +5,8 @@ jobs:
   prepare_test:
     runs-on: ubuntu-latest
     outputs:
-      HOST: ${{ steps.lolhost.outputs.HOSTNAME }}
-      DATABASE: ${{ steps.loldatabase.outputs.DB_NAME }}
+      HOST: ${{ steps.lolhost.outputs.HOST }}
+      DATABASE: ${{ steps.loldatabase.outputs.DATABASE }}
     steps:
       - name: "Allocate a new host"
         id: lolhost
