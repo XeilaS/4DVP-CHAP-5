@@ -20,7 +20,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v3
         with:
-          name: sauvegarde-build?
+          name: sauvegarde-build
           path: dist/
 
 
