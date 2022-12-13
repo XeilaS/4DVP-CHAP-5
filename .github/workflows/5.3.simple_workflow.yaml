@@ -15,7 +15,6 @@ jobs:
       - run: pip install pytest
       - run: pip install pytest-html
       - run: python -m pytest --html=report.html --self-contained-html
-        
       - name: Save test report
         uses: actions/upload-artifact@v3
         with:
