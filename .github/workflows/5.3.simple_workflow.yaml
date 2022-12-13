@@ -14,8 +14,8 @@ jobs:
       - run: pip install pytest
       - run: pip install pytest-html
       - run: python -m pytest --html=report.html --self-contained-html
-        if: always()
       - name: Save test report
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: pytest-report
