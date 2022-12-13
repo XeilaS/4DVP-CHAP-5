@@ -16,7 +16,7 @@ jobs:
           name: pytest-report
           path: report.html
       - run: |
-              pip install requirements.txt
-              python pip install pytest
-              python pip install pytest-html
+              pip install -r requirements.txt
+              pip install pytest
+              pip install pytest-html
               pytest
