@@ -1,9 +1,0 @@
-on:
-  push:
-  workflow_dispatch:
-jobs:
-  information_display:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "::notice Ceci est un notice"
-      - run: echo "::warning Ceci est un warning"
